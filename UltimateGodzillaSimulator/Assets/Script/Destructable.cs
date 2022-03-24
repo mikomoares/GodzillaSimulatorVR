@@ -16,7 +16,7 @@ public class Destructable : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other) {
         print(other.gameObject.tag);
-        if (other.gameObject.tag == "Quebrador"){
+        if (other.gameObject.tag == "Quebrador" || other.gameObject.tag == "Hand" ){
             teste = true;
             //Instantiate(explosion, other.gameObject.transform.position, Quaternion.identity);
             //Instantiate(smoke, gameObject.transform.position, Quaternion.identity);

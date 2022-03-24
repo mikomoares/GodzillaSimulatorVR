@@ -9,9 +9,9 @@ public class Laser : MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
-        if(other.tag == "Destructable"){
+        if(other.tag == "Quebrador"){
            Destroy(other.gameObject);
-           Instantiate (smoke, other.gameObject.transform.position, Quaternion.Euler(-90,0,0));
+           //Instantiate (smoke, other.gameObject.transform.position, Quaternion.Euler(-90,0,0));
         }
     }
 }

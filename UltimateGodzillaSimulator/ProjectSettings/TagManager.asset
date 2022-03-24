@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - Destructable
   - Quebrador
+  - Hand
   layers:
   - Default
   - TransparentFX
