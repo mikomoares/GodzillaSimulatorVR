@@ -128,8 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teste: 0
   broken: {fileID: 4311187989433353505, guid: df35d0ad185008c42896a5c0e92741c8, type: 3}
-  explosion: {fileID: 0}
-  smoke: {fileID: 0}
+  explosion: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
+  smoke: {fileID: 100000, guid: 6a3cb4ac8fa12944ba1233cbec0e9c69, type: 3}
 --- !u!65 &3614606720486289476
 BoxCollider:
   m_ObjectHideFlags: 0
