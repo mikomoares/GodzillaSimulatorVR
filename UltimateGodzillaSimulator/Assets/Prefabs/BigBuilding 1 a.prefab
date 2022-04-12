@@ -99,7 +99,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &3614606720486289478
 BoxCollider:
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79b17a960cdbda44ab2946d6b52200f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teste: 0
+  explosionBool: 0
   broken: {fileID: 4311187989433353505, guid: df35d0ad185008c42896a5c0e92741c8, type: 3}
   explosion: {fileID: 100008, guid: 06736895ea0a4ff408d25e6684dce797, type: 3}
   smoke: {fileID: 100000, guid: 6a3cb4ac8fa12944ba1233cbec0e9c69, type: 3}

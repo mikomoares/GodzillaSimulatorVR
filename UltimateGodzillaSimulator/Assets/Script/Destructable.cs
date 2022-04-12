@@ -10,7 +10,11 @@ public class Destructable : MonoBehaviour
     void Update()
     {
         if (explosionBool){
-            Instantiate(broken, transform.position, transform.rotation);
+            GameObject brokenBuilding = Instantiate(broken, transform.position, transform.rotation);
+            foreach(Transform child in brokenBuilding.transform)
+            {
+                child.gameObject.GetComponent<MeshRenderer>().material = this.GetComponent<MeshRenderer>().material;
+            }
             Destroy(gameObject);
         }
     }

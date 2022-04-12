@@ -12,6 +12,7 @@ public class carSystem : MonoBehaviour
     public float speed;
     private Vector3 startRotation;
     private Vector3 turnRotation;
+    private Vector3 alturaY;
     void Start()
     {
         car = this.gameObject.transform.GetChild(0).gameObject;
@@ -37,6 +38,8 @@ public class carSystem : MonoBehaviour
                 {
                     targetPoint = "A";
                 }
+                alturaY = new Vector3 (car.transform.position.x,0.5f,car.transform.position.z);
+                car.transform.position = alturaY;
             }
             else if (targetPoint == "A"){
                 car.transform.eulerAngles = turnRotation;
@@ -45,6 +48,8 @@ public class carSystem : MonoBehaviour
                 {
                     targetPoint = "B";
                 }
+                alturaY = new Vector3 (car.transform.position.x,0.5f,car.transform.position.z);
+                car.transform.position = alturaY;
             }
         }
         else{
