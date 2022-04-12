@@ -29,32 +29,35 @@ public class carSystem : MonoBehaviour
     void Update()
     {
         step =  speed * Time.deltaTime; // calculate distance to move
-        if(car.GetComponent<carScript>().isAlive){
-            car.GetComponent<Collider>().attachedRigidbody.useGravity = false;
-            if(targetPoint == "B"){
-                car.transform.eulerAngles = startRotation;
-                car.transform.position = Vector3.MoveTowards(car.transform.position, pointB.transform.position, step);
-                if (Vector3.Distance(car.transform.position, pointB.transform.position) < 0.001f)
-                {
-                    targetPoint = "A";
+        if(car != null){
+            if(car.GetComponent<carScript>().isAlive){
+                car.GetComponent<Collider>().attachedRigidbody.useGravity = false;
+                if(targetPoint == "B"){
+                    car.transform.eulerAngles = startRotation;
+                    car.transform.position = Vector3.MoveTowards(car.transform.position, pointB.transform.position, step);
+                    if (Vector3.Distance(car.transform.position, pointB.transform.position) < 0.001f)
+                    {
+                        targetPoint = "A";
+                    }
+                    alturaY = new Vector3 (car.transform.position.x,0.5f,car.transform.position.z);
+                    car.transform.position = alturaY;
                 }
-                alturaY = new Vector3 (car.transform.position.x,0.5f,car.transform.position.z);
-                car.transform.position = alturaY;
+                else if (targetPoint == "A"){
+                    car.transform.eulerAngles = turnRotation;
+                    car.transform.position = Vector3.MoveTowards(car.transform.position, pointA.transform.position, step);
+                    if (Vector3.Distance(car.transform.position, pointA.transform.position) < 0.001f)
+                    {
+                        targetPoint = "B";
+                    }
+                    alturaY = new Vector3 (car.transform.position.x,0.5f,car.transform.position.z);
+                    car.transform.position = alturaY;
+                }
             }
-            else if (targetPoint == "A"){
-                car.transform.eulerAngles = turnRotation;
-                car.transform.position = Vector3.MoveTowards(car.transform.position, pointA.transform.position, step);
-                if (Vector3.Distance(car.transform.position, pointA.transform.position) < 0.001f)
-                {
-                    targetPoint = "B";
-                }
-                alturaY = new Vector3 (car.transform.position.x,0.5f,car.transform.position.z);
-                car.transform.position = alturaY;
+            else{
+                speed = 0f;
+                car.GetComponent<Collider>().attachedRigidbody.useGravity = true;
             }
         }
-        else{
-            speed = 0f;
-            car.GetComponent<Collider>().attachedRigidbody.useGravity = true;
-        }
+        
     }
 }
