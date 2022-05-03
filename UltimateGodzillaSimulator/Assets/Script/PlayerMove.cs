@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<CharacterController>().isTrigger = true;
+        //GetComponent<CharacterController>().isTrigger = true;
 
         Controller = GetComponent<CharacterController>();
  
