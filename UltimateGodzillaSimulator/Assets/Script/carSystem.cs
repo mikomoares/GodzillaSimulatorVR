@@ -5,6 +5,7 @@ using UnityEngine;
 public class carSystem : MonoBehaviour
 {
     private GameObject car;
+    private GameObject carObj;
     private GameObject pointA;
     private GameObject pointB;
     public string targetPoint;
@@ -13,12 +14,15 @@ public class carSystem : MonoBehaviour
     private Vector3 startRotation;
     private Vector3 turnRotation;
     private Vector3 alturaY;
+    public GameObject[] possibleCars;
+
     void Start()
     {
-        car = this.gameObject.transform.GetChild(0).gameObject;
-        pointA = this.gameObject.transform.GetChild(1).gameObject;
-        pointB = this.gameObject.transform.GetChild(2).gameObject;
-        car.transform.position = pointA.transform.position;
+        pointA = this.gameObject.transform.GetChild(0).gameObject;
+        pointB = this.gameObject.transform.GetChild(1).gameObject;
+        carObj = possibleCars[Random.Range(0,possibleCars.Length)];
+        car = GameObject.Instantiate(carObj, pointA.transform.position, Quaternion.identity);
+        car.transform.parent = this.gameObject.transform; 
         targetPoint = "B";
         speed = 3f;
         startRotation = car.transform.eulerAngles;

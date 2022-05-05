@@ -8,9 +8,7 @@ public class CameraMove : MonoBehaviour
     private const float YMin = -50.0f;
     private const float YMax = 50.0f;
  
-    public Transform lookAt;
- 
-    public Transform Player;
+    public static Transform lookAt;
  
     public float distance;
     private float currentX = 0.0f;

@@ -4,25 +4,21 @@ using UnityEngine;
  
 public class PlayerMove : MonoBehaviour
 {
- 
- 
     CharacterController Controller;
  
     public float Speed, gravity;
  
     public Transform Cam;
  
- 
-    // Start is called before the first frame update
     void Start()
     {
-        //GetComponent<CharacterController>().isTrigger = true;
-
+        //NAO TIRAR=======================
+        Cam = this.transform.parent.GetChild(0);
+        CameraMove.lookAt = this.gameObject.transform;
+        //================================
         Controller = GetComponent<CharacterController>();
- 
     }
- 
-    // Update is called once per frame
+
     void Update()
     {
  
