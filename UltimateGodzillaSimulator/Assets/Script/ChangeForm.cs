@@ -14,8 +14,6 @@ public class ChangeForm : MonoBehaviour
 
     public LayerMask layerInteraction;
 
-    public Vector3 interactionRayPoint = new Vector3 (0.5f,0.5f,0f);
-
     void Start()
     {
         camera3rd = this.gameObject.transform.GetChild(0).gameObject;
@@ -32,19 +30,30 @@ public class ChangeForm : MonoBehaviour
             this.transform.position = childForm.transform.position;
         }
 
-        if(Physics.Raycast(camera3rd.GetComponent<Camera>().ViewportPointToRay(interactionRayPoint) , out RaycastHit hit, 500f, layerInteraction)){
-            print("hit");
+        Ray ray = camera3rd.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+
+        Debug.DrawRay(ray.origin, ray.direction * 20000f,  Color.red);
+
+        if(Input.GetKeyUp(KeyCode.Mouse0)){
+            if(Physics.Raycast(ray , out RaycastHit hit, 500f, layerInteraction)){
+                InstantiateNewForm(hit);
+            }
         }
 
-        if(Input.GetKeyUp(KeyCode.F)){
-            InstantiateNewForm();
-        }
+        
     }
 
-    private void InstantiateNewForm(){
+    private void InstantiateNewForm(RaycastHit hit){
         Destroy(childForm);
-        activeForm = possibleForms[Random.Range(0,possibleForms.Length)];
-        childForm = GameObject.Instantiate(activeForm, new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
+        foreach(GameObject go in possibleForms)
+        {
+            if(go.name == hit.transform.gameObject.name)
+            {
+                activeForm = go;
+            }
+        }
+        Vector3 objPos = hit.transform.position;
+        childForm = GameObject.Instantiate(activeForm, new Vector3 (this.transform.position.x, objPos.y, this.transform.position.z), Quaternion.identity);
         childForm.transform.parent = this.gameObject.transform; 
     }
 }
