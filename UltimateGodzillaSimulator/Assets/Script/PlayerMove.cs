@@ -6,41 +6,37 @@ public class PlayerMove : MonoBehaviour
 {
     CharacterController Controller;
  
-    public float Speed, gravity;
+    private float speed;
  
     public Transform Cam;
+
+    private Rigidbody rigidBody;
+    private Vector3 Movement;
  
     void Start()
     {
+        speed = 8f;
         //NAO TIRAR=======================
-        Cam = this.transform.parent.GetChild(0);
+        Cam = GameObject.Find("Camera3rd").transform;
         CameraMove.lookAt = this.gameObject.transform;
         //================================
-        Controller = GetComponent<CharacterController>();
+        rigidBody = this.gameObject.GetComponent<Rigidbody>();
     }
 
     void Update()
     {
  
-        float Horizontal = Input.GetAxis("Horizontal") * Speed * Time.deltaTime;
-        float Vertical = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        float Horizontal = Input.GetAxis("Horizontal") * speed ;
+        float Vertical = Input.GetAxis("Vertical") * speed ;
  
-        Vector3 Movement = Cam.transform.right * Horizontal + Cam.transform.forward * Vertical;
-        Movement.y = 0f;
+        Movement = Cam.transform.right * Horizontal + Cam.transform.forward * Vertical;
 
-        if(this.transform.parent != null || Controller.isGrounded){
-            gravity = 0f;
-        }   
-        else{
-            gravity -= 9.81f * Time.deltaTime;
-        }
+        Movement.y = rigidBody.velocity.y;
+        rigidBody.velocity = Movement;
 
-        Controller.Move(Movement + new Vector3(0f, gravity, 0f));
- 
         if (Movement.magnitude != 0f)
         {
             transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * Cam.GetComponent<CameraMove>().sensivity * Time.deltaTime);
- 
  
             Quaternion CamRotation = Cam.rotation;
             CamRotation.x = 0f;
@@ -51,14 +47,11 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision other) {
-        if (other.gameObject.tag == "Quebrador" || other.gameObject.tag == "Hand" ){
-            gravity = 0f;
-        }
-        else{
+    void FixedUpdate(){
 
-        }
     }
+
+
  
 }
  

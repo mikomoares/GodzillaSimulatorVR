@@ -16,10 +16,10 @@ public class ChangeForm : MonoBehaviour
 
     void Start()
     {
-        camera3rd = this.gameObject.transform.GetChild(0).gameObject;
+        camera3rd = GameObject.Find("Camera3rd");
         activeForm = possibleForms[Random.Range(0,possibleForms.Length)];
         childForm = GameObject.Instantiate(activeForm, new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
-        childForm.transform.parent = this.gameObject.transform; 
+        //childForm.transform.parent = this.gameObject.transform; 
     }
 
     void Update()
@@ -54,6 +54,6 @@ public class ChangeForm : MonoBehaviour
         }
         Vector3 objPos = hit.transform.position;
         childForm = GameObject.Instantiate(activeForm, new Vector3 (this.transform.position.x, objPos.y, this.transform.position.z), Quaternion.identity);
-        childForm.transform.parent = this.gameObject.transform; 
+        //childForm.transform.parent = this.gameObject.transform; 
     }
 }
