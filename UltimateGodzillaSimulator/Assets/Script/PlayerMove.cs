@@ -5,11 +5,8 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     CharacterController Controller;
- 
     private float speed;
- 
     public Transform Cam;
-
     private Rigidbody rigidBody;
     private Vector3 Movement;
  
@@ -46,12 +43,5 @@ public class PlayerMove : MonoBehaviour
  
         }
     }
-
-    void FixedUpdate(){
-
-    }
-
-
- 
 }
  

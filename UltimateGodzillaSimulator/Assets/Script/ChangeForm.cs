@@ -32,7 +32,7 @@ public class ChangeForm : MonoBehaviour
 
         Ray ray = camera3rd.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
 
-        Debug.DrawRay(ray.origin, ray.direction * 20000f,  Color.red);
+        //Debug.DrawRay(ray.origin, ray.direction * 20000f,  Color.red);
 
         if(Input.GetKeyUp(KeyCode.Mouse0)){
             if(Physics.Raycast(ray , out RaycastHit hit, 500f, layerInteraction)){
@@ -43,15 +43,17 @@ public class ChangeForm : MonoBehaviour
         
     }
 
-    private void InstantiateNewForm(RaycastHit hit){
+    private async void InstantiateNewForm(RaycastHit hit){
         Destroy(childForm);
-        foreach(GameObject go in possibleForms)
+
+        for(int i = 0; i < possibleForms.Length; i++)
         {
-            if(go.name == hit.transform.gameObject.name)
+            if(i == hit.transform.gameObject.GetComponent<InteractableObjects>().objID)
             {
-                activeForm = go;
+                activeForm = possibleForms[i];
             }
         }
+
         Vector3 objPos = hit.transform.position;
         childForm = GameObject.Instantiate(activeForm, new Vector3 (this.transform.position.x, objPos.y, this.transform.position.z), Quaternion.identity);
         //childForm.transform.parent = this.gameObject.transform; 
