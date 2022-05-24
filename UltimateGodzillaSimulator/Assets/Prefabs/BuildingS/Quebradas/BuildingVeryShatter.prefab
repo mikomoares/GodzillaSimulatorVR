@@ -5840,7 +5840,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8004533744249695259, guid: bec04c1d46cb2d6409706659b3339449, type: 3}
 --- !u!54 &5526964105847108420
@@ -13280,7 +13280,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1985185595385412599, guid: bec04c1d46cb2d6409706659b3339449, type: 3}
 --- !u!54 &7404511677723483801
@@ -14055,7 +14055,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2528949004637118864, guid: bec04c1d46cb2d6409706659b3339449, type: 3}
 --- !u!1 &3864474880511343080
@@ -14594,7 +14594,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4487574645867483348, guid: bec04c1d46cb2d6409706659b3339449, type: 3}
 --- !u!54 &4687352794151225446
@@ -16033,7 +16033,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1258460499237717563, guid: bec04c1d46cb2d6409706659b3339449, type: 3}
 --- !u!54 &1653895681283549532
@@ -16367,7 +16367,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2147509290054253279, guid: bec04c1d46cb2d6409706659b3339449, type: 3}
 --- !u!54 &3085560483957485414
@@ -16480,7 +16480,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -675213101611157818, guid: bec04c1d46cb2d6409706659b3339449, type: 3}
 --- !u!54 &5293933905559997807
@@ -21676,7 +21676,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5302523521703817184, guid: bec04c1d46cb2d6409706659b3339449, type: 3}
 --- !u!54 &8454343505838559440

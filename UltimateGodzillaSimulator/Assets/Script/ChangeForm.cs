@@ -17,7 +17,8 @@ public class ChangeForm : MonoBehaviour
     void Start()
     {
         camera3rd = GameObject.Find("Camera3rd");
-        activeForm = possibleForms[Random.Range(0,possibleForms.Length)];
+        //activeForm = possibleForms[Random.Range(0,possibleForms.Length)];
+        activeForm = possibleForms[0];
         childForm = GameObject.Instantiate(activeForm, new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z), Quaternion.identity);
         //childForm.transform.parent = this.gameObject.transform; 
     }

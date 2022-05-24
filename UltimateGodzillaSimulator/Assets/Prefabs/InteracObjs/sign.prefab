@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 3856566075666941673}
   - component: {fileID: 3856566075666941672}
   - component: {fileID: 3856566075666941675}
-  - component: {fileID: 3856566075666941674}
+  - component: {fileID: -1895796310182980749}
   m_Layer: 6
   m_Name: sign
   m_TagString: Quebrador
@@ -146,7 +146,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!64 &3856566075666941673
 MeshCollider:
@@ -268,7 +268,7 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &3856566075666941674
+--- !u!114 &-1895796310182980749
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
