@@ -15,7 +15,6 @@ public class carScript : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
-        print(other.gameObject.tag);
         if (other.gameObject.tag == "Quebrador" || other.gameObject.tag == "Hand" ){
             isAlive = false;
         }

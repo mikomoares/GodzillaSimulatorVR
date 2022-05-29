@@ -19,7 +19,6 @@ public class Destructable : MonoBehaviour
         }
     }
     private void OnCollisionEnter(Collision other) {
-        print(other.gameObject.tag);
         if (other.gameObject.tag == "Quebrador"){
             explosionBool = true;
             Instantiate(explosion, other.gameObject.transform.position, Quaternion.identity);
