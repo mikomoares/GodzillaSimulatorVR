@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8160708015785853206
+--- !u!1 &1663343455316823643
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,15 +8,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5123954443247661829}
-  - component: {fileID: 4197627342710933811}
-  - component: {fileID: 7601089631123895754}
-  - component: {fileID: 171494838248019993}
-  - component: {fileID: 615430477296080420}
-  - component: {fileID: 866860578950594186}
-  - component: {fileID: -2381077109397279797}
-  - component: {fileID: -8800939226908267760}
-  - component: {fileID: 3615863293759644152}
+  - component: {fileID: 4949455358679047482}
+  - component: {fileID: 6453340066961326181}
+  - component: {fileID: 4136938711196377036}
+  - component: {fileID: 5600629721743936372}
+  - component: {fileID: 598565508188365970}
+  - component: {fileID: 871916881070886996}
+  - component: {fileID: 6743651746189792860}
+  - component: {fileID: 7283286990483174699}
+  - component: {fileID: 512462301693059126}
   m_Layer: 6
   m_Name: carro3
   m_TagString: Quebrador
@@ -24,35 +24,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5123954443247661829
+--- !u!4 &4949455358679047482
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
-  m_LocalRotation: {x: 0.000001809995, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.443771, y: -0.0008196384, z: 9.795959}
+  m_GameObject: {fileID: 1663343455316823643}
+  m_LocalRotation: {x: 0.000001809995, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.222, z: -0.356}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 5123954443247661829}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4197627342710933811
+--- !u!33 &6453340066961326181
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
+  m_GameObject: {fileID: 1663343455316823643}
   m_Mesh: {fileID: -1997392669490731943, guid: a34815e104563cb4b8649da5b9908959, type: 3}
---- !u!23 &7601089631123895754
+--- !u!23 &4136938711196377036
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
+  m_GameObject: {fileID: 1663343455316823643}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -87,13 +87,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &171494838248019993
+--- !u!64 &5600629721743936372
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
+  m_GameObject: {fileID: 1663343455316823643}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -101,13 +101,13 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1997392669490731943, guid: a34815e104563cb4b8649da5b9908959, type: 3}
---- !u!54 &615430477296080420
+--- !u!54 &598565508188365970
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
+  m_GameObject: {fileID: 1663343455316823643}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -117,26 +117,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &866860578950594186
+--- !u!114 &871916881070886996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
+  m_GameObject: {fileID: 1663343455316823643}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4724e44906a88e2489244764bedf069c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objID: 8
---- !u!114 &-2381077109397279797
+--- !u!114 &6743651746189792860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
+  m_GameObject: {fileID: 1663343455316823643}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
@@ -182,13 +182,13 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &-8800939226908267760
+--- !u!114 &7283286990483174699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
+  m_GameObject: {fileID: 1663343455316823643}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
@@ -236,16 +236,47 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
---- !u!114 &3615863293759644152
+--- !u!114 &512462301693059126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8160708015785853206}
+  m_GameObject: {fileID: 1663343455316823643}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e1a1397ebcea2247842faec973fcc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isAlive: 0
+--- !u!1 &8160708015785853206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5123954443247661829}
+  m_Layer: 0
+  m_Name: carro3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5123954443247661829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160708015785853206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.985, z: 0.356}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4949455358679047482}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

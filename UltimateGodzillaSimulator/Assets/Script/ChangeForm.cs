@@ -8,7 +8,7 @@ public class ChangeForm : MonoBehaviour
 
     public GameObject activeForm;
 
-    private GameObject childForm;
+    public GameObject childForm;
 
     private GameObject camera3rd;
 

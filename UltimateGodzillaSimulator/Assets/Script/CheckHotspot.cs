@@ -10,7 +10,8 @@ public class CheckHotspot : MonoBehaviour
         gameManager = GameObject.Find("GameManager");
     }
     private void OnTriggerEnter(Collider other) {
-        if(other.name == "ComputerPlayer"){
+        if(other.tag == "Player"){
+            print(other.name);
             gameManager.GetComponent<GameManager>().AddPoint(this.gameObject.name);
         }
     }

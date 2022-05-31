@@ -19,12 +19,14 @@ public class GameManager : MonoBehaviour
         time = 300f;
         foreach (Transform child in hotspots.transform)
         {
-            child.gameObject.GetComponent<BoxCollider>().enabled = false;
+            child.gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            child.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
 
         randomChildIdx = Random.Range(0, hotspots.transform.childCount);
         activeHS = hotspots.transform.GetChild(randomChildIdx).gameObject;
-        activeHS.GetComponent<BoxCollider>().enabled = true;
+        activeHS.GetComponent<CapsuleCollider>().enabled = true;
+        activeHS.gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour
         time -= Time.deltaTime;
         foreach (Transform child in timers.transform)
         {
-            child.GetChild(1).gameObject.GetComponent<Text>().text = time.ToString();
+            child.GetChild(1).gameObject.GetComponent<Text>().text = Mathf.Round(time).ToString();
         }
 
         if (time <= 0){
@@ -55,10 +57,12 @@ public class GameManager : MonoBehaviour
     public void AddPoint(string name){
         if (name == activeHS.name){
             points ++;
-            activeHS.GetComponent<BoxCollider>().enabled = false;
+            activeHS.GetComponent<CapsuleCollider>().enabled = false;
+            activeHS.gameObject.transform.GetChild(0).gameObject.SetActive(false);
             randomChildIdx = Random.Range(0, hotspots.transform.childCount);
             activeHS = hotspots.transform.GetChild(randomChildIdx).gameObject;
-            GetComponent<BoxCollider>().enabled = true;
+            activeHS.GetComponent<CapsuleCollider>().enabled = true;
+            activeHS.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 768242229732553765}
   m_Layer: 0
   m_Name: Fountain
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
