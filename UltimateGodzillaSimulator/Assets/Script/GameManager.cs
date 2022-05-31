@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,10 +48,13 @@ public class GameManager : MonoBehaviour
 
     private void GameOver(){
         print("Godzilla ganhou");
+        SceneManager.LoadScene("Menu");
     }
 
     private void Victory(){
+        
         print ("Player ganhou");
+        SceneManager.LoadScene("Menu");
     }
 
     public void AddPoint(string name){

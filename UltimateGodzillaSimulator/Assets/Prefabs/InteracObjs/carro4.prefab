@@ -9,9 +9,17 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2139883037992979586}
-  m_Layer: 0
+  - component: {fileID: 5494499283981555369}
+  - component: {fileID: 2268944050018069072}
+  - component: {fileID: 8386216585010694043}
+  - component: {fileID: 6124657074984800694}
+  - component: {fileID: 3049162904856591548}
+  - component: {fileID: 5339998242277637226}
+  - component: {fileID: 3203623733830987439}
+  - component: {fileID: 3274997068731062059}
+  m_Layer: 6
   m_Name: carro4
-  m_TagString: Untagged
+  m_TagString: Quebrador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,67 +31,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3164127910409961105}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.843, z: 0.475}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7787697391710064590}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6505498438145916381
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7787697391710064590}
-  - component: {fileID: 1245371995782280696}
-  - component: {fileID: 4788727525592893697}
-  - component: {fileID: 2984128755079111882}
-  - component: {fileID: 718101967947494119}
-  - component: {fileID: 8599868981208145901}
-  - component: {fileID: 1662794580105535291}
-  - component: {fileID: 8177864058637651454}
-  - component: {fileID: 8105127741707302010}
-  m_Layer: 6
-  m_Name: carro4
-  m_TagString: Quebrador
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7787697391710064590
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
   m_LocalRotation: {x: 0.000001809995, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.34399998, z: -0.475}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
-  m_Father: {fileID: 2139883037992979586}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1245371995782280696
+--- !u!33 &5494499283981555369
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
+  m_GameObject: {fileID: 3164127910409961105}
   m_Mesh: {fileID: 9130386893770814044, guid: c161592af94efd34cb4750c5e929365d, type: 3}
---- !u!23 &4788727525592893697
+--- !u!23 &2268944050018069072
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
+  m_GameObject: {fileID: 3164127910409961105}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -118,13 +87,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2984128755079111882
+--- !u!64 &8386216585010694043
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
+  m_GameObject: {fileID: 3164127910409961105}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -132,13 +101,13 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9130386893770814044, guid: c161592af94efd34cb4750c5e929365d, type: 3}
---- !u!54 &718101967947494119
+--- !u!54 &6124657074984800694
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
+  m_GameObject: {fileID: 3164127910409961105}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -148,26 +117,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &8599868981208145901
+--- !u!114 &3049162904856591548
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
+  m_GameObject: {fileID: 3164127910409961105}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4724e44906a88e2489244764bedf069c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objID: 9
---- !u!114 &1662794580105535291
+--- !u!114 &5339998242277637226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
+  m_GameObject: {fileID: 3164127910409961105}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
@@ -213,13 +182,13 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
---- !u!114 &8177864058637651454
+--- !u!114 &3203623733830987439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
+  m_GameObject: {fileID: 3164127910409961105}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffefbea063cab884ca33e5a449e5c22c, type: 3}
@@ -267,13 +236,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
---- !u!114 &8105127741707302010
+--- !u!114 &3274997068731062059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6505498438145916381}
+  m_GameObject: {fileID: 3164127910409961105}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e1a1397ebcea2247842faec973fcc18, type: 3}
