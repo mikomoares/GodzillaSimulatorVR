@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5155718539561402224}
   - component: {fileID: 768242229732553770}
   - component: {fileID: 768242229732553765}
+  - component: {fileID: 547209537176647240}
   m_Layer: 0
   m_Name: Fountain
   m_TagString: Player
@@ -221,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
+  isGrounded: 0
 --- !u!136 &768242229732553765
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -231,7 +233,20 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.010722824
-  m_Height: 0.0142944325
-  m_Direction: 1
-  m_Center: {x: 0.0000000027939675, y: 0.0021304612, z: 0.00000004796311}
+  m_Radius: 0.0071671964
+  m_Height: 0.020014746
+  m_Direction: 0
+  m_Center: {x: 0.00002688567, y: 0.0018071389, z: 0.0002711932}
+--- !u!65 &547209537176647240
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768242229732553764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015804571, y: 0.0020680642, z: 0.0013430314}
+  m_Center: {x: 0, y: -0.0053033405, z: -4.958411e-16}

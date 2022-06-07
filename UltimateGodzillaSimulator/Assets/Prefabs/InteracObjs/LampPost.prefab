@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2491169770778919738}
   - component: {fileID: 2484700356162073713}
   - component: {fileID: 5261355785497113847}
+  - component: {fileID: 475987152724663082}
   m_Layer: 6
   m_Name: LampPost
   m_TagString: Quebrador
@@ -32,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 572590611682431950}
   m_LocalRotation: {x: 0.000001809995, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 2.654, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 70, y: 100, z: 100}
   m_Children:
   - {fileID: 5414125371260552830}
   - {fileID: 2715696207451908493}
@@ -167,7 +168,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &2484700356162073713
 MonoBehaviour:
@@ -237,6 +238,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7807538432633192378, guid: 316dc47c31818a84392246d631858c82, type: 3}
+--- !u!65 &475987152724663082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572590611682431950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022317166, y: 0.0016618419, z: 0.007952338}
+  m_Center: {x: 0.0029808674, y: -0.02613395, z: 0.00031022934}
 --- !u!1 &4036134842882980216
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5794252508577767841}
   - component: {fileID: 206070405958289176}
   - component: {fileID: 6566617897798487619}
+  - component: {fileID: 3996905308292346724}
   m_Layer: 0
   m_Name: Hidrante
   m_TagString: Player
@@ -221,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
+  isGrounded: 0
 --- !u!136 &6566617897798487619
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -235,3 +237,16 @@ CapsuleCollider:
   m_Height: 0.004520665
   m_Direction: 1
   m_Center: {x: 0.0001219369, y: -0.0003070262, z: -0.00013675663}
+--- !u!65 &3996905308292346724
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3275969651926004600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015804569, y: 0.0005339524, z: 0.0013430314}
+  m_Center: {x: 0, y: -0.0026584116, z: 0}

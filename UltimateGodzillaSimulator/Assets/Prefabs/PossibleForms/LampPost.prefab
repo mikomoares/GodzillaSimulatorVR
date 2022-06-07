@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8339709624119415710}
   - component: {fileID: 8339709624119415705}
   - component: {fileID: 8339709624119415704}
+  - component: {fileID: -3178461035655637563}
   m_Layer: 0
   m_Name: LampPost
   m_TagString: Player
@@ -113,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
+  isGrounded: 0
 --- !u!114 &8339709624119415710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,3 +237,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!65 &-3178461035655637563
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8339709624119415707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008465303, y: 0.0026831317, z: 0.0032301464}
+  m_Center: {x: 0.003442424, y: -0.026879555, z: -0.00094355806}

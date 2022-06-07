@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3445036414599257957}
   - component: {fileID: 7477259267626269180}
   - component: {fileID: 6527888463932250552}
+  - component: {fileID: 5121925152435916081}
   m_Layer: 0
   m_Name: carro2
   m_TagString: Player
@@ -112,10 +113,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.0070609376
-  m_Height: 0.005759932
-  m_Direction: 1
-  m_Center: {x: -8.1490725e-10, y: 0.000028692186, z: 0.0056064567}
+  m_Radius: 0.0034510994
+  m_Height: 0.014917822
+  m_Direction: 2
+  m_Center: {x: -0.00008335114, y: 0.00041150153, z: 0.005651456}
 --- !u!114 &3445036414599257957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
+  isGrounded: 0
 --- !u!114 &7477259267626269180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,3 +237,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!65 &5121925152435916081
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450217130177906234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015804567, y: 0.0017241427, z: 0.0040066647}
+  m_Center: {x: -0.0001791133, y: -0.0026675456, z: 0.006091874}

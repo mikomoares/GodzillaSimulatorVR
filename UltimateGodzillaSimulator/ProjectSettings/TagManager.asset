@@ -9,6 +9,7 @@ TagManager:
   - Destructable
   - Quebrador
   - Hand
+  - Ground
   layers:
   - Default
   - TransparentFX

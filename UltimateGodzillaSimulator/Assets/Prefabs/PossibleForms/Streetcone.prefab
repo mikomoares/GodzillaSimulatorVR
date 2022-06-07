@@ -1,49 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3898383069467224792
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3898383069467224794}
-  - component: {fileID: 3898383069467224793}
-  m_Layer: 0
-  m_Name: Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3898383069467224794
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3898383069467224792}
-  m_LocalRotation: {x: -0.000001809995, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00006, y: 0.0020099997, z: -0.00007000728}
-  m_LocalScale: {x: 0.00048651255, y: 0.0027315633, z: 0.0005104664}
-  m_Children: []
-  m_Father: {fileID: 8314597577675857996}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3898383069467224793
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3898383069467224792}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4987802185760215647
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,6 +16,7 @@ GameObject:
   - component: {fileID: 4987802185760215648}
   - component: {fileID: 4987802185760215649}
   - component: {fileID: 4987802185760215646}
+  - component: {fileID: -9037965134444405625}
   m_Layer: 0
   m_Name: Streetcone
   m_TagString: Player
@@ -77,8 +34,7 @@ Transform:
   m_LocalRotation: {x: 0.000001809995, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.659, z: -2.618}
   m_LocalScale: {x: 100, y: 100, z: 100}
-  m_Children:
-  - {fileID: 3898383069467224794}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -141,10 +97,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.00083944737
+  m_Radius: 0.0009576619
   m_Height: 0.0031196843
   m_Direction: 1
-  m_Center: {x: 0.000015446654, y: 0.0018413365, z: 0.00003948025}
+  m_Center: {x: 0.000015446618, y: 0.0018413365, z: 0.00009603143}
 --- !u!114 &4987802185760215651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
+  isGrounded: 0
 --- !u!114 &4987802185760215648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,3 +237,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   interactable: {fileID: 0}
+--- !u!65 &-9037965134444405625
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987802185760215647}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015804567, y: 0.00055553403, z: 0.0013430312}
+  m_Center: {x: 0, y: 0.00033247276, z: -1.0165216e-17}

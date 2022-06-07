@@ -9,6 +9,10 @@ public class PlayerMove : MonoBehaviour
     public Transform Cam;
     private Rigidbody rigidBody;
     private Vector3 Movement;
+    public bool isGrounded;
+    public bool canMove;
+    public bool isDropped;
+
  
     void Start()
     {
@@ -18,20 +22,29 @@ public class PlayerMove : MonoBehaviour
         CameraMove.lookAt = this.gameObject.transform;
         //================================
         rigidBody = this.gameObject.GetComponent<Rigidbody>();
+        isGrounded = true;
     }
 
     void Update()
     {
- 
         float Horizontal = Input.GetAxis("Horizontal") * speed ;
         float Vertical = Input.GetAxis("Vertical") * speed ;
- 
-        Movement = Cam.transform.right * Horizontal + Cam.transform.forward * Vertical;
 
+        if(this.transform.parent != null){
+            if(this.transform.parent.tag == "Hand"){
+                canMove = false;
+            }
+        }
+        else if((Vertical != 0 || Horizontal != 0) && isDropped){
+            canMove = true;
+        }
+ 
+        if(isGrounded) Movement = Cam.transform.right * Horizontal + Cam.transform.forward * Vertical;
+        else if(canMove) Movement = new Vector3(0f,0f,0f);
         Movement.y = rigidBody.velocity.y;
         rigidBody.velocity = Movement;
 
-        if (Movement.magnitude != 0f)
+        if (Movement.magnitude != 0f && canMove)
         {
             transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * Cam.GetComponent<CameraMove>().sensivity * Time.deltaTime);
  
@@ -40,8 +53,25 @@ public class PlayerMove : MonoBehaviour
             CamRotation.z = 0f;
  
             transform.rotation = Quaternion.Lerp(transform.rotation, CamRotation, 0.1f);
- 
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Ground"){
+            isGrounded = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag == "Ground"){
+            isGrounded = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision){
+        isDropped = true;
+    }
+
 }
  

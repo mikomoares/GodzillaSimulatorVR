@@ -198,7 +198,6 @@ GameObject:
   - component: {fileID: 7492816224766548332}
   - component: {fileID: 5253044140678563281}
   - component: {fileID: 6012308523064726660}
-  - component: {fileID: 4158805914605516891}
   m_Layer: 0
   m_Name: streets
   m_TagString: Untagged
@@ -214,7 +213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767247640893028365}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.299997, y: 0, z: 12.799995}
+  m_LocalPosition: {x: -12.299997, y: -0.147, z: 12.799995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5020291178759867624}
@@ -269,20 +268,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4158805914605516891
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767247640893028365}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: d5464c787fcfad64e941cbb81a1366cf, type: 3}
 --- !u!1 &1787769145829640663
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +331,6 @@ GameObject:
   - component: {fileID: 36046674667073403}
   - component: {fileID: 5021940056995467911}
   - component: {fileID: 6667310234148274441}
-  - component: {fileID: 602037157942519612}
   m_Layer: 0
   m_Name: streets
   m_TagString: Untagged
@@ -362,7 +346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924494178982556746}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.7000008, y: 0, z: -15.299995}
+  m_LocalPosition: {x: 1.7000008, y: -0.147, z: -15.299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5020291178759867624}
@@ -417,20 +401,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &602037157942519612
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1924494178982556746}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: dcb53ffaaabc0f843b5177426be98bcc, type: 3}
 --- !u!1 &3014231486386815546
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +546,6 @@ GameObject:
   - component: {fileID: 7398087914158648684}
   - component: {fileID: 102770297294013185}
   - component: {fileID: 5472561220316268400}
-  - component: {fileID: 3849245791054019264}
   m_Layer: 0
   m_Name: streets
   m_TagString: Untagged
@@ -592,7 +561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4534133775684218440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.700001, y: 0, z: -15.299995}
+  m_LocalPosition: {x: 15.700001, y: -0.147, z: -15.299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5020291178759867624}
@@ -647,20 +616,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3849245791054019264
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4534133775684218440}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: d5464c787fcfad64e941cbb81a1366cf, type: 3}
 --- !u!1 &4958543695206742741
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,7 +627,6 @@ GameObject:
   - component: {fileID: 5417210845083981840}
   - component: {fileID: 1783657940551031021}
   - component: {fileID: 9094367150898587187}
-  - component: {fileID: 4616108030067479319}
   m_Layer: 0
   m_Name: streets
   m_TagString: Untagged
@@ -688,7 +642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4958543695206742741}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.700001, y: 0, z: 12.799995}
+  m_LocalPosition: {x: 15.700001, y: -0.147, z: 12.799995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5020291178759867624}
@@ -743,20 +697,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4616108030067479319
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958543695206742741}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: d5464c787fcfad64e941cbb81a1366cf, type: 3}
 --- !u!1 &6412416742627825480
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,7 +708,6 @@ GameObject:
   - component: {fileID: 8966857602129698485}
   - component: {fileID: 4460157261114509958}
   - component: {fileID: 2197326069368544039}
-  - component: {fileID: 2041526249064207480}
   m_Layer: 0
   m_Name: streets
   m_TagString: Untagged
@@ -784,7 +723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6412416742627825480}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.7000008, y: 0, z: 12.799995}
+  m_LocalPosition: {x: 1.7000008, y: -0.147, z: 12.799995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5020291178759867624}
@@ -839,20 +778,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2041526249064207480
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6412416742627825480}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: dcb53ffaaabc0f843b5177426be98bcc, type: 3}
 --- !u!1 &6933704262376527943
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +890,6 @@ GameObject:
   - component: {fileID: 7581124578000592050}
   - component: {fileID: 5995255195584708522}
   - component: {fileID: 5463154787203056465}
-  - component: {fileID: 3759104761175815581}
   m_Layer: 0
   m_Name: streets
   m_TagString: Untagged
@@ -981,7 +905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7481943158147959577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.299997, y: 0, z: -1.2000046}
+  m_LocalPosition: {x: -12.299997, y: -0.147, z: -1.2000046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5020291178759867624}
@@ -1036,20 +960,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3759104761175815581
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7481943158147959577}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: dcb53ffaaabc0f843b5177426be98bcc, type: 3}
 --- !u!1 &7541377708687442884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,7 +1009,6 @@ GameObject:
   - component: {fileID: 2462331050142439594}
   - component: {fileID: 6526311927083875374}
   - component: {fileID: 6252271645970511701}
-  - component: {fileID: 7744273327981339906}
   m_Layer: 0
   m_Name: streets
   m_TagString: Untagged
@@ -1115,7 +1024,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7691993663816691714}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.299997, y: 0, z: -15.299995}
+  m_LocalPosition: {x: -12.299997, y: -0.147, z: -15.299995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5020291178759867624}
@@ -1170,20 +1079,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7744273327981339906
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7691993663816691714}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: d5464c787fcfad64e941cbb81a1366cf, type: 3}
 --- !u!1 &7966837432919689238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,7 +1232,6 @@ GameObject:
   - component: {fileID: 1722409166248133842}
   - component: {fileID: 9128617343479574207}
   - component: {fileID: 7928846102464335042}
-  - component: {fileID: 8963079530479139965}
   m_Layer: 0
   m_Name: streets
   m_TagString: Untagged
@@ -1353,7 +1247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8559964450535396429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.700001, y: 0, z: -1.2000046}
+  m_LocalPosition: {x: 15.700001, y: -0.147, z: -1.2000046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5020291178759867624}
@@ -1408,20 +1302,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8963079530479139965
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8559964450535396429}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2432090755550338912, guid: dcb53ffaaabc0f843b5177426be98bcc, type: 3}
 --- !u!1 &8892860393911390459
 GameObject:
   m_ObjectHideFlags: 0

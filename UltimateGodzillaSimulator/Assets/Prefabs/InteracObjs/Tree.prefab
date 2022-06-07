@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2321853227031703665}
   - component: {fileID: 6736653072851290250}
   - component: {fileID: 7029609107946489413}
+  - component: {fileID: 3854131767845400412}
   m_Layer: 6
   m_Name: Tree
   m_TagString: Quebrador
@@ -102,7 +103,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!64 &4019318566039028649
 MeshCollider:
@@ -237,6 +238,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objID: 0
+--- !u!65 &3854131767845400412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3529112878612137556}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01013647, y: 0.003538348, z: 0.010994125}
+  m_Center: {x: 0.00001468122, y: -0.007860811, z: 0.000008236169}
 --- !u!1 &7110559105066678389
 GameObject:
   m_ObjectHideFlags: 0

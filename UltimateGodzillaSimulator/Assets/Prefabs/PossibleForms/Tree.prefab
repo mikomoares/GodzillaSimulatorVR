@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6078492892788392813}
   - component: {fileID: 6078492892788392802}
   - component: {fileID: -8630767629925710015}
+  - component: {fileID: 5066007335141807608}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Player
@@ -221,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
+  isGrounded: 0
 --- !u!136 &-8630767629925710015
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -235,3 +237,16 @@ CapsuleCollider:
   m_Height: 0.025048427
   m_Direction: 1
   m_Center: {x: 0.000014681136, y: 0.0028942046, z: 0.000008235918}
+--- !u!65 &5066007335141807608
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078492892788392800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0015804567, y: 0.0018730664, z: 0.0013430312}
+  m_Center: {x: -0.0001791133, y: -0.009662731, z: -0.00008685097}
