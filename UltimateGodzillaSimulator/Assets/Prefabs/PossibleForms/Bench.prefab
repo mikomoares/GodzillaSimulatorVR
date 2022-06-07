@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1643328331042520158}
   - component: {fileID: 1738199565498538385}
   - component: {fileID: 3690893222638394442}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bench
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -236,6 +236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
+  isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!65 &3690893222638394442
 BoxCollider:
   m_ObjectHideFlags: 0

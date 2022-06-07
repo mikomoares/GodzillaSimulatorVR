@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -7135939498515585848}
   - component: {fileID: 6370067736215554773}
   - component: {fileID: 3745473906223161379}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bustop
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -223,6 +223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!136 &6370067736215554773
 CapsuleCollider:
   m_ObjectHideFlags: 0

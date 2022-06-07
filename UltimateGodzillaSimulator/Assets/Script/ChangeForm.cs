@@ -56,7 +56,7 @@ public class ChangeForm : MonoBehaviour
         }
 
         Vector3 objPos = hit.transform.position;
-        childForm = GameObject.Instantiate(activeForm, new Vector3 (this.transform.position.x, objPos.y, this.transform.position.z), Quaternion.identity);
+        childForm = GameObject.Instantiate(activeForm, new Vector3 (this.transform.position.x, objPos.y, this.transform.position.z), Quaternion.Euler(new Vector3(hit.transform.rotation.x, hit.transform.rotation.y, hit.transform.rotation.z)));
         //childForm.transform.parent = this.gameObject.transform; 
     }
 }

@@ -46,12 +46,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void GameOver(){
+    public void GameOver(){
         print("Godzilla ganhou");
         SceneManager.LoadScene("Menu");
     }
 
-    private void Victory(){
+    public void Victory(){
         
         print ("Player ganhou");
         SceneManager.LoadScene("Menu");

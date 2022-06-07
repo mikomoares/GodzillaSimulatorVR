@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2515996043226915427}
   - component: {fileID: 1863286391754581617}
   - component: {fileID: 5719256631315857615}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: carro4
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -131,6 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!114 &2515996043226915427
 MonoBehaviour:
   m_ObjectHideFlags: 0

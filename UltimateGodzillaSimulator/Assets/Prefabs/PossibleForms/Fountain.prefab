@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 768242229732553770}
   - component: {fileID: 768242229732553765}
   - component: {fileID: 547209537176647240}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fountain
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -223,6 +223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!136 &768242229732553765
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 206070405958289176}
   - component: {fileID: 6566617897798487619}
   - component: {fileID: 3996905308292346724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hidrante
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -223,6 +223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!136 &6566617897798487619
 CapsuleCollider:
   m_ObjectHideFlags: 0

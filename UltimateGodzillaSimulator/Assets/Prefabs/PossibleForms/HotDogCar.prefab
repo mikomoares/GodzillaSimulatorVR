@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4793675120664261710}
   - component: {fileID: 1862173765887493516}
   - component: {fileID: 3910610543169991179}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HotDogCar
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -223,6 +223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!136 &1862173765887493516
 CapsuleCollider:
   m_ObjectHideFlags: 0

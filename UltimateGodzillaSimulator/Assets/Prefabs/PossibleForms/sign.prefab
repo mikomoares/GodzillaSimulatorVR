@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 986634199921667831}
   - component: {fileID: 986634199921667828}
   - component: {fileID: 8474981601833075936}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sign
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -237,6 +237,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!65 &8474981601833075936
 BoxCollider:
   m_ObjectHideFlags: 0

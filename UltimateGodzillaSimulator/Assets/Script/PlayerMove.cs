@@ -23,6 +23,8 @@ public class PlayerMove : MonoBehaviour
         //================================
         rigidBody = this.gameObject.GetComponent<Rigidbody>();
         isGrounded = true;
+        canMove = true;
+        isDropped = false;
     }
 
     void Update()
@@ -33,16 +35,21 @@ public class PlayerMove : MonoBehaviour
         if(this.transform.parent != null){
             if(this.transform.parent.tag == "Hand"){
                 canMove = false;
+                rigidBody.freezeRotation = false;
+
             }
         }
         else if((Vertical != 0 || Horizontal != 0) && isDropped){
             canMove = true;
+            isGrounded = true;
+            rigidBody.freezeRotation = true;
         }
  
         if(isGrounded) Movement = Cam.transform.right * Horizontal + Cam.transform.forward * Vertical;
-        else if(canMove) Movement = new Vector3(0f,0f,0f);
+        else Movement = new Vector3(0f,0f,0f);
+        
         Movement.y = rigidBody.velocity.y;
-        rigidBody.velocity = Movement;
+        if(canMove)rigidBody.velocity = Movement;
 
         if (Movement.magnitude != 0f && canMove)
         {
@@ -70,7 +77,7 @@ public class PlayerMove : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision){
-        isDropped = true;
+        if (!canMove) isDropped = true;
     }
 
 }

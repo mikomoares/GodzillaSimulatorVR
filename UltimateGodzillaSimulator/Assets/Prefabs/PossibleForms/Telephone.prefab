@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2578477278728239568}
   - component: {fileID: 2578477278728239569}
   - component: {fileID: 2553449056874356068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Telephone
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -115,6 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!114 &2578477278728239583
 MonoBehaviour:
   m_ObjectHideFlags: 0

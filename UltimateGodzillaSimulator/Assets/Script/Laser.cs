@@ -10,25 +10,50 @@ public class Laser : MonoBehaviour
     public Hand handRight;
     private GameObject laser;
     private AudioSource audioS;
+    public float startTimerA;
+    public float timerA;
+    public float startTimerB;
+    public float timerB;
+    public bool canDoLaser;
 
     void Start(){
         laser = transform.GetChild(0).gameObject;
         laser.SetActive(false);
         audioS = this.GetComponent<AudioSource>();
+        startTimerA = 14f;
+        timerA = startTimerA;
+        startTimerB = 4f;
+        timerB = startTimerB;
+        canDoLaser = true;
     }
 
-    void Update(){
+    async void Update(){
+
         GrabTypes startingGrabTypeRight = handRight.GetGrabStarting();
         GrabTypes startingGrabTypeLeft = handLeft.GetGrabStarting();
-        if (startingGrabTypeRight == GrabTypes.Grip || startingGrabTypeLeft == GrabTypes.Grip){
+        timerB -= Time.deltaTime;
+
+        if(!canDoLaser){
+            timerA -= Time.deltaTime;
+            if(timerA <= 0){
+                canDoLaser = true;
+            }
+        }
+
+        if ((startingGrabTypeRight == GrabTypes.Grip || startingGrabTypeLeft == GrabTypes.Grip) && canDoLaser){
             laser.SetActive(true);
             laser.GetComponent<Animator>().SetBool("On",true);
             audioS.Play();
+            timerB = startTimerB;
+            timerA = startTimerA;
+            canDoLaser = false;
         }
-        else if (handRight.GetGrabEnding(GrabTypes.Grip) == GrabTypes.Grip || handLeft.GetGrabEnding(GrabTypes.Grip) == GrabTypes.Grip){
+        
+        if (timerB <= 0 && !canDoLaser){
             laser.GetComponent<Animator>().SetBool("On",false);
             audioS.Pause();
             laser.SetActive(false);
+            timerB = 4f;
         }
     }
 }

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8339709624119415705}
   - component: {fileID: 8339709624119415704}
   - component: {fileID: -3178461035655637563}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LampPost
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -115,6 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cam: {fileID: 0}
   isGrounded: 0
+  canMove: 0
+  isDropped: 0
 --- !u!114 &8339709624119415710
 MonoBehaviour:
   m_ObjectHideFlags: 0
