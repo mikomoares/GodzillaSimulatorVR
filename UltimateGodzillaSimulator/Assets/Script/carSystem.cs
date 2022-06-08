@@ -24,7 +24,7 @@ public class carSystem : MonoBehaviour
         car = GameObject.Instantiate(carObj, pointA.transform.position, Quaternion.identity);
         car.transform.parent = this.gameObject.transform; 
         targetPoint = "B";
-        speed = 3f;
+        speed = Random.Range(3f, 6f);
         startRotation = car.transform.eulerAngles;
         turnRotation = new Vector3 (startRotation.x, startRotation.y + 180, startRotation.z);
     }
@@ -39,7 +39,7 @@ public class carSystem : MonoBehaviour
                 if(targetPoint == "B"){
                     car.transform.eulerAngles = startRotation;
                     car.transform.position = Vector3.MoveTowards(car.transform.position, pointB.transform.position, step);
-                    if (Vector3.Distance(car.transform.position, pointB.transform.position) < 0.001f)
+                    if (Vector3.Distance(car.transform.position, pointB.transform.position) < 0.1f)
                     {
                         targetPoint = "A";
                     }
@@ -49,7 +49,7 @@ public class carSystem : MonoBehaviour
                 else if (targetPoint == "A"){
                     car.transform.eulerAngles = turnRotation;
                     car.transform.position = Vector3.MoveTowards(car.transform.position, pointA.transform.position, step);
-                    if (Vector3.Distance(car.transform.position, pointA.transform.position) < 0.001f)
+                    if (Vector3.Distance(car.transform.position, pointA.transform.position) < 0.1f)
                     {
                         targetPoint = "B";
                     }

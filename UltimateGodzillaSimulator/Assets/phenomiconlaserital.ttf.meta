@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fbedb5ca3249ec344953396c1010ac16
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Phenomicon Laser Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: cbc45e20aa563af4c90dfb88b573f017, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

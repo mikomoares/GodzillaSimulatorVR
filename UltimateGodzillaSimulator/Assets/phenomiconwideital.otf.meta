@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8ab8c939b1e6bd7409e2503d8c06d185
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Phenomicon Wide Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4abd86e348252704dbf04460259c743c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

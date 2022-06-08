@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b59ac40d5106d5246b527903dd6d0712
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Phenomicon Expanded
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 70842e403b69c294ab864d131d36b9ce, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

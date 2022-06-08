@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Valve.VR.InteractionSystem;
 
 public class Laser : MonoBehaviour
@@ -15,6 +16,7 @@ public class Laser : MonoBehaviour
     public float startTimerB;
     public float timerB;
     public bool canDoLaser;
+    public GameObject textCooldown;
 
     void Start(){
         laser = transform.GetChild(0).gameObject;
@@ -25,6 +27,7 @@ public class Laser : MonoBehaviour
         startTimerB = 4f;
         timerB = startTimerB;
         canDoLaser = true;
+        textCooldown.SetActive(false);
     }
 
     async void Update(){
@@ -32,11 +35,13 @@ public class Laser : MonoBehaviour
         GrabTypes startingGrabTypeRight = handRight.GetGrabStarting();
         GrabTypes startingGrabTypeLeft = handLeft.GetGrabStarting();
         timerB -= Time.deltaTime;
+        textCooldown.GetComponent<Text>().text = Mathf.Round(timerA).ToString();
 
         if(!canDoLaser){
             timerA -= Time.deltaTime;
             if(timerA <= 0){
                 canDoLaser = true;
+                textCooldown.SetActive(false);
             }
         }
 
@@ -54,6 +59,7 @@ public class Laser : MonoBehaviour
             audioS.Pause();
             laser.SetActive(false);
             timerB = 4f;
+            textCooldown.SetActive(true);
         }
     }
 }

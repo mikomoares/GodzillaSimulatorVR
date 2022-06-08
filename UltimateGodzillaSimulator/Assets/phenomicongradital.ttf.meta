@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 99af529aa07767d47a45edfa1c9b9bd7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Phenomicon Gradient Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 746696f01a5824b46b17ae0664fc2656, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 29ef5910b06a0524baa500c3196184d5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Phenomicon Semi-Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b72941d24b5c33c42a897d0176cfb608, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

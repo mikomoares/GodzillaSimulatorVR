@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: a64a67db764b9894fb36acb8501fa3d4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Phenomicon 3D Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 86838ff667ebdf94987a736e1e3e91d6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

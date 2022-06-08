@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bc419bc4b2964dd4a931877d536841c9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Phenomicon Condensed Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9a05f6611465fde4b9f074e2cc00d835, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
